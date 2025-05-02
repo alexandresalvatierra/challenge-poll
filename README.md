@@ -28,6 +28,10 @@ Built with **React + TypeScript + styled-components + react-pose**, this poll co
 
 ---
 
+## 🌀 Demo
+
+![Poll demo](./doc/poll-demo.gif)
+
 ## 📸 Screenshots
 
 ### ▶️ Initial state
