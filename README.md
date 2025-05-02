@@ -44,7 +44,9 @@ Built with **React + TypeScript + styled-components + react-pose**, this poll co
 
 ### 📱 Mobile view
 
-![Mobile View](./doc/mobile.png)
+<p align="center">
+  <img src="./doc/mobile.png" alt="Mobile View" style="width: 100%; max-width: 480px;" />
+</p>
 
 ---
 
