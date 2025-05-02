@@ -1,19 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 
-/**
- * This file contains some starter global styles to make it easier for you to
- * complete the challenge.
- *
- * I recommend that you do not add styles here and, instead, add styles via
- * their respective styled-components.
- */
-export default createGlobalStyle`
-
-  /* The Inter UI font face via: https://rsms.me/inter/ */
+export const GlobalStyles = createGlobalStyle`
   @import url('https://rsms.me/inter/inter.css');
   html { font-family: 'Inter', sans-serif; }
   @supports (font-variation-settings: normal) {
     html { font-family: 'Inter var', sans-serif; }
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 
   body {
