@@ -1,62 +1,52 @@
-![](./doc/react-poll-challenge.png)
+# 🗳️ Decode React Poll Challenge
 
-# Decode React Poll Challenge
+Built with **React + TypeScript + styled-components + react-pose**, this poll component mimics interactive embedded polls you might find in blog posts.
 
-We use React for all of our front-end work and you'll be expected to take design specifications and mockups and turn them into working applications.
+---
 
-Below, we'll specify the challenge, describe the functionality, and give you tips and constraints along the way.
+## 🔍 Features
 
-## The Challenge
+- ✅ Fully functional poll UI with vote tracking
+- ✅ Uses **React functional components** and **hooks**
+- ✅ **TypeScript** throughout with strict typing
+- ✅ Styled via **styled-components** (following repo conventions)
+- ✅ Animations via **react-pose**
+- ✅ Mobile responsive for 480px and up
+- ✅ Accessible structure (semantic markup + focus states)
 
-Within our blog posts we can embed polls, which are a survey asking users which choice out of a list of items is their best guess or answer to a question.
+---
 
-> In each of the images below, the text the blue font style below are notes, not part of the design
->
-> ![Note Style](./doc/comment-style.png)
+## 💎 Extra Features
 
-Here's what the poll should look like _before_ the user has answered:
+| Feature                   | Description                                                               |
+| ------------------------- | ------------------------------------------------------------------------- |
+| ✨ Animated entrance      | Poll options appear in a cascade effect on page load                      |
+| 📈 Count-up effect        | Vote percentages animate smoothly                                         |
+| 📱 Mobile responsiveness  | Fully optimized down to small mobile screens                              |
+| 🧠 Memoized rendering     | `PollOption` is memoized to prevent unnecessary re-renders                |
+| 🎯 Clean state management | Voting logic handled via `useCallback`, state updates, and derived values |
 
-![Unanswered Poll](./doc/unanswered-poll.png)
+---
 
-And here is the result when the user votes for the answer _Bear_, (but the _Blue Whale_ answer has the most votes):
+## 📸 Screenshots
 
-![Answered Poll](./doc/answered-poll.png)
+### ▶️ Initial state
 
-Here are additional notes of functionality:
+![Unvoted Poll](./doc/unanswered.png)
 
-![Answered Poll](./doc/answered-poll-notes.png)
+### ✅ After voting
 
-**Your challenge**: create the above functionality using React (in TypeScript, with React Hooks) using this repo as a starting point.
+![Voted Poll](./doc/voted.png)
 
-## Instructions
+### 📱 Mobile view
 
-How to attempt this challenge:
+![Mobile View](./doc/mobile.png)
 
-1. Create a new repo in _your_ Github account and note the git url
-2. Clone this repo
-3. Solve the challenge
-4. Set your new repo as the origin: `git remote set-url origin ${your repo url}`
-5. Push your solution to your repo
+---
 
-You must follow these steps for your solution to be accepted -- **forks or other methods will not be considered**.
+## 🚀 Getting Started
 
-## Further Implementation Details
-
-- **Show a random question from the question list on each page reload**
-- **Do not install any other npm modules**
-- **No class components.** Use only React Hooks + functions.
-- Components should have their props typed ([example](./components/Poll.tsx))
-- Maintain existing code styles (prettier, etc.)
-- Any errors or missing features will disqualify the solution
-
-## Tips
-
-- The questions can be found in [`questions.json`](./questions.json) - we've loaded them for you in [`index.tsx`](./pages/index.tsx)
-- We've started the `Poll` component for you in [`Poll.tsx`](./components/Poll.tsx)
-- When you create new components, you should use `styled-components` in the same component style as `Poll.tsx`
-- The closer your CSS-design looks to the mockup, the better
-
-## BONUS
-
-- **BONUS** (optional) points for any animations ([`pose`](https://popmotion.io/pose/) is included as a dependency if you choose to use it)
-- **BONUS** (optional) if it looks good on both Desktop and Mobile
+```bash
+yarn install
+yarn dev
+```
